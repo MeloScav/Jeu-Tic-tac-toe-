@@ -95,8 +95,10 @@ drawElement();
 /*let nbr = Math.floor((Math.random()*10)%2);*/
 let tourX = true;
 document.getElementById("joueur1").style.display = "block";
-
+let count = 0;
 document.addEventListener("click", (e)=>{
+  count ++;
+  console.log(count);
   // On récupère l'endroit où l'on clic en X et Y
   let x = Math.floor((e.clientX - canvas.offsetLeft) / (widthCanvas / 3)); 
   let y = Math.floor((e.clientY - canvas.offsetTop) / (heightCanvas / 3));
@@ -139,7 +141,12 @@ function verifEnd(){
       alert("Le joueur 2 gagne !");
       document.location.reload();
     }
-}
+  }
+  else if(count === 9){
+    alert("Egalité !");
+    document.location.reload();
+  }
+
 }
 setTimeout(function(){verifEnd()},500); 
 
