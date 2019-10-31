@@ -1,2 +1,7 @@
-# Tic-tac-toe 
-Jeu OXO réalisé en ....
+# Tic-tac-toe
+
+Here is the game Tic-tac-toe made in canvas.
+
+## Author
+
+Scavezzoni Méloé
